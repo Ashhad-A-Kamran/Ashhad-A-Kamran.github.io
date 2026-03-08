@@ -920,13 +920,33 @@ section {
 }
 
 .modal-content-box {
-    width: 90%;
-    max-width: 600px;
-    max-height: 85vh;
+    width: 95%;
+    max-width: 650px;
+    max-height: 90vh;
     overflow-y: auto;
     position: relative;
+    padding: 2.5rem;
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
 
+.modal-body {
+    margin-top: 1rem;
+}
 
+/* Modal specific images */
+.modal-img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .modal-img-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .modal-overlay.active .modal-content-box {

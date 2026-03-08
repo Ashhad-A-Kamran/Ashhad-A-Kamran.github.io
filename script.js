@@ -130,7 +130,12 @@ const modalData = {
                     </ul>
                 </div>
                 <div class="modal-media">
-                   <div style="background: #eee; padding: 2rem; border-radius: 8px; text-align: center; color: #888;">Rome Pictures Pending</div>
+                   <img src="assets/images/Sapienza Rome/sapienza1.jpeg" alt="Sapienza Rome 1">
+                   <img src="assets/images/Sapienza Rome/sapienza2.jpeg" alt="Sapienza Rome 2">
+                   <img src="assets/images/Sapienza Rome/sapienza3.jpeg" alt="Sapienza Rome 3">
+                   <img src="assets/images/Sapienza Rome/sapienza4.jpeg" alt="Sapienza Rome 4">
+                   <img src="assets/images/Sapienza Rome/sapienza6.jpeg" alt="Sapienza Rome 6">
+                   <img src="assets/images/Sapienza Rome/sapienza7.jpeg" alt="Sapienza Rome 7">
                 </div>
             </div>
         `

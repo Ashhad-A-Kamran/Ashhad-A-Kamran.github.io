@@ -199,8 +199,8 @@ const modalData = {
                 </ul>
             </div>
             <div class="modal-media">
-                <img src="assets/images/Arcana 2.jpeg" alt="Receiving Certificate">
-                <img src="assets/images/Arcana.png" alt="Arcana Performance Certificate">
+                <img src="assets/images/Arcana/Arcana 2.jpeg" alt="Receiving Certificate">
+                <img src="assets/images/Arcana/Arcana.png" alt="Arcana Performance Certificate">
                 <p style="font-size:0.8rem; color:#666; text-align:center;">Receiving the Best Performance Award</p>
             </div>
         </div>
@@ -218,7 +218,7 @@ const modalData = {
                     </p>
                 </div>
                 <div class="modal-media">
-                    <img src="assets/images/SupervisedML.png" alt="Deep Learning Certificate">
+                    <img src="assets/images/Certificates/SupervisedML.png" alt="Deep Learning Certificate">
                 </div>
             </div>
         `
@@ -233,7 +233,7 @@ const modalData = {
                     </p>
                 </div>
                 <div class="modal-media">
-                    <img src="assets/images/Advanced Learning Algorithms.png" alt="Machine Learning Certificate">
+                    <img src="assets/images/Certificates/Advanced Learning Algorithms.png" alt="Machine Learning Certificate">
                 </div>
             </div>
         `
@@ -248,7 +248,7 @@ const modalData = {
                     </p>
                 </div>
                 <div class="modal-media">
-                    <img src="assets/images/intro To python.png" alt="Intro to Python Certificate">
+                    <img src="assets/images/Certificates/intro To python.png" alt="Intro to Python Certificate">
                 </div>
             </div>
         `
@@ -263,7 +263,7 @@ const modalData = {
                     </p>
                 </div>
                 <div class="modal-media">
-                    <img src="assets/images/Intermediate Python.png" alt="Intermediate Python Certificate">
+                    <img src="assets/images/Certificates/Intermediate Python.png" alt="Intermediate Python Certificate">
                 </div>
             </div>
         `

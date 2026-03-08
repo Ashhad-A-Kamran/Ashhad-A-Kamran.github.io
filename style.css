@@ -935,7 +935,7 @@ section {
     margin-top: 1rem;
 }
 
-/* Modal specific images */
+/* Modal specific image */
 .modal-img-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

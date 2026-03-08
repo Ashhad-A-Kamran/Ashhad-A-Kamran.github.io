@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ============================================================
-// MODAL LOGIC — defined globally so onclick attributes work
+// MODAL LOGIC — defined globally so onclick attributes works
 // ============================================================
 const modalData = {
     // EDUCATION DETAILS

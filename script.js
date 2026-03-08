@@ -96,144 +96,168 @@ document.addEventListener("DOMContentLoaded", () => {
 const modalData = {
     // EDUCATION DETAILS
     'duet': {
-        title: 'Dawood University: BS Artificial Intelligence',
+        title: 'Education Details: DUET',
         content: `
-            <div style="display:flex; gap:1rem; align-items:center; margin-bottom:1.2rem;">
-                <img src="https://test2.duet.edu.pk/wp-content/uploads/2020/11/duet_logo-300x227.png"
-                     alt="DUET Logo"
-                     style="width:60px; height:60px; border-radius:8px; object-fit:cover; background:#fff; padding:4px;"
-                     onerror="this.style.display='none'">
-                <div>
-                    <strong style="display:block; font-size:1rem;">Academic Excellence</strong>
-                    <span style="color:var(--accent-color); font-size:0.85rem;">Karachi, Pakistan</span>
+            <div class="modal-side-layout">
+                <div class="modal-description">
+                    <p style="color:var(--text-secondary); line-height:1.7; margin-bottom:1.5rem;">
+                        As a student at Dawood University of Engineering and Technology, I've maintained a <strong>Ranked 1st in Batch</strong> position with a GPA of 3.93. My focus is on Artificial Intelligence and its applications in automation.
+                    </p>
+                    <ul style="color:var(--text-secondary); padding-left:1.2rem; margin-bottom:1.5rem;">
+                        <li>Core focus: Machine Learning & Neural Networks</li>
+                        <li>Batch Rank: 1st across 8 semesters</li>
+                        <li>Specialized in RAG and Agentic systems development</li>
+                    </ul>
                 </div>
-            </div>
-            <p style="color:var(--text-secondary); line-height:1.7; margin-bottom:1rem;">
-                Consistently ranked 1st in my batch throughout the program. My time here has been dedicated to mastering the mathematical foundations of AI and applying them to real-world datasets.
-            </p>
-            <div style="margin-top: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
-                <h4 style="margin-bottom: 0.8rem; font-size: 0.9rem; color: var(--text-primary);">Media & Pictures</h4>
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem;">
-                    <div style="aspect-ratio: 16/9; background: #f0f0f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.75rem;">Image Placeholder</div>
-                    <div style="aspect-ratio: 16/9; background: #f0f0f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.75rem;">Image Placeholder</div>
+                <div class="modal-media">
+                   <div style="background: #eee; padding: 2rem; border-radius: 8px; text-align: center; color: #888;">Campus Pictures Pending</div>
                 </div>
             </div>
         `
     },
     'sapienza': {
-        title: 'Sapienza University: Applied CS & AI',
+        title: 'Education Details: Sapienza',
         content: `
-            <div style="display:flex; gap:1rem; align-items:center; margin-bottom:1.2rem;">
-                <img src="https://www.standyou.com/uploads/20220403220048_file_Sapienza-University-of-Rome-Italy.jpg"
-                     alt="Sapienza Logo"
-                     style="width:60px; height:60px; border-radius:8px; object-fit:cover;"
-                     onerror="this.style.display='none'">
-                <div>
-                    <strong style="display:block; font-size:1rem;">Erasmus+ Scholars Program</strong>
-                    <span style="color:var(--accent-color); font-size:0.85rem;">Rome, Italy</span>
+            <div class="modal-side-layout">
+                <div class="modal-description">
+                    <p style="color:var(--text-secondary); line-height:1.7; margin-bottom:1.5rem;">
+                        Participated in the Erasmus+ exchange program at Sapienza Università di Roma, focusing on Applied Computer Science and AI. This experience allowed me to collaborate with international researchers in Italy.
+                    </p>
+                    <ul style="color:var(--text-secondary); padding-left:1.2rem; margin-bottom:1.5rem;">
+                        <li>Focus: Advanced Computer Vision & ML</li>
+                        <li>Erasmus+ Scholar Grant</li>
+                        <li>International Research Collaboration</li>
+                    </ul>
                 </div>
-            </div>
-            <p style="color:var(--text-secondary); line-height:1.7; margin-bottom:1rem;">
-                As an Erasmus+ scholar, I participated in deep research and collaboration on advanced machine learning architectures and computer vision labs.
-            </p>
-            <div style="margin-top: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
-                <h4 style="margin-bottom: 0.8rem; font-size: 0.9rem; color: var(--text-primary);">Media & Pictures</h4>
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem;">
-                    <div style="aspect-ratio: 16/9; background: #f0f0f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.75rem;">Rome Campus Placeholder</div>
-                    <div style="aspect-ratio: 16/9; background: #f0f0f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.75rem;">Research Lab Placeholder</div>
+                <div class="modal-media">
+                   <div style="background: #eee; padding: 2rem; border-radius: 8px; text-align: center; color: #888;">Rome Pictures Pending</div>
                 </div>
             </div>
         `
     },
 
-    // EDUCATION TRANSCRIPTS
+    // TRANSCRIPTS
     'duet_transcript': {
         title: 'Academic Transcript: DUET',
         content: `
-            <div style="padding: 2rem; text-align: center; background: #f9f9f9; border-radius: 12px; border: 2px dashed #ddd;">
-                <p style="color: #666; margin-bottom: 1.5rem;">The official transcript document is pending upload.</p>
-                <div style="max-width: 300px; margin: 0 auto; padding: 1rem; background: #fff; border: 1px solid #eee; border-radius: 8px;">
-                     <strong style="display:block; font-size: 1.1rem; margin-bottom: 0.5rem;">Current GPA: 3.93</strong>
-                     <p style="font-size: 0.85rem; color: var(--text-secondary);">Ranked 1st in the Artificial Intelligence batch since admission.</p>
+            <div class="modal-side-layout">
+                <div class="modal-description">
+                    <p style="color:var(--text-secondary); margin-bottom:1rem;">Official academic record from Dawood University.</p>
+                    <div style="padding:1rem; background:rgba(234,88,12,0.05); border-radius:8px;">
+                        <strong>Current Status:</strong> Completed 5 Semesters<br>
+                        <strong>Avg GPA:</strong> 3.93/4.00
+                    </div>
                 </div>
-            </div>
-        `
-    },
-    'sapienza_transcript': {
-        title: 'Academic Transcript: Sapienza',
-        content: `
-            <div style="padding: 2rem; text-align: center; background: #f9f9f9; border-radius: 12px; border: 2px dashed #ddd;">
-                <p style="color: #666; margin-bottom: 1.5rem;">Exchange semester transcript will be available soon.</p>
-                <div style="max-width: 300px; margin: 0 auto; padding: 1rem; background: #fff; border: 1px solid #eee; border-radius: 8px;">
-                     <strong style="display:block; font-size: 1.1rem; margin-bottom: 0.5rem;">Program: Erasmus+</strong>
-                     <p style="font-size: 0.85rem; color: var(--text-secondary);">Applied CS & AI Semester, Rome.</p>
+                <div class="modal-media">
+                    <div style="padding: 2rem; text-align: center; background: #fff; border: 2px dashed #ddd; border-radius: 12px; height: 100%; display: flex; align-items: center; justify-content: center; color: #999;">
+                        Transcript PDF Upload Pending
+                    </div>
                 </div>
             </div>
         `
     },
 
-    // EXPERIENCE DETAILS & DOCUMENTS
+    // EXPERIENCE
     'onestop_details': {
-        title: 'AI Engineer: Onestop Vendors',
+        title: 'Experience Details: Onestop Vendors',
         content: `
-            <h4 style="color: var(--text-primary); margin-bottom: 0.8rem;">Key Achievements & Pictures</h4>
-            <p style="color:var(--text-secondary); line-height:1.7; margin-bottom:1rem;">
-                Spearheaded the development of agentic AI systems that automated complex customer discovery workflows. I worked extensively with LangGraph and programmatic feedback loops to ensure system reliability.
-            </p>
-            <div style="margin-top: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem;">
-                    <div style="aspect-ratio: 16/9; background: #f0f0f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.75rem;">Office Environment</div>
-                    <div style="aspect-ratio: 16/9; background: #f0f0f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.75rem;">Workstation Setup</div>
+            <div class="modal-side-layout">
+                <div class="modal-description">
+                    <p style="color:var(--text-secondary); line-height:1.7; margin-bottom:1rem;">
+                        At Onestop Vendors, I architected adaptive agentic AI systems using LangGraph. This involved complex customer workflows and real-time STT/TTS pipelines.
+                    </p>
+                    <ul style="color:var(--text-secondary); padding-left: 1.2rem; margin-top:1rem;">
+                        <li>Built autonomous agents for complex scheduling.</li>
+                        <li>Optimized vector database queries for low latency.</li>
+                        <li>Collaborated on real-time STT systems.</li>
+                    </ul>
                 </div>
-            </div>
-        `
-    },
-    'onestop_docs': {
-        title: 'Documents: Onestop Vendors',
-        content: `
-            <div style="display: flex; flex-direction: column; gap: 1rem;">
-                <div style="padding: 1rem; background: rgba(234, 88, 12, 0.05); border: 1px solid rgba(234, 88, 12, 0.1); border-radius: 12px; display: flex; justify-content: space-between; align-items: center;">
-                    <div>
-                        <strong style="display:block; font-size: 0.9rem;">Experience Letter</strong>
-                        <span style="font-size: 0.75rem; color: #666;">Verified by HR</span>
-                    </div>
-                    <span style="color: var(--accent-color); font-weight: 600; font-size: 0.8rem;">Pending Upload</span>
-                </div>
-                <div style="padding: 1rem; background: rgba(234, 88, 12, 0.05); border: 1px solid rgba(234, 88, 12, 0.1); border-radius: 12px; display: flex; justify-content: space-between; align-items: center;">
-                    <div>
-                        <strong style="display:block; font-size: 0.9rem;">Recognition Award</strong>
-                        <span style="font-size: 0.75rem; color: #666;">Quarterly Performance</span>
-                    </div>
-                    <span style="color: var(--accent-color); font-weight: 600; font-size: 0.8rem;">Available Soon</span>
+                <div class="modal-media">
+                   <div style="background: #eee; height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #888;">Office & Project Photos Pending</div>
                 </div>
             </div>
         `
     },
     'arcana_details': {
-        title: 'AI Intern: Arcana Info',
+        title: 'Experience Details: Arcana Info',
         content: `
-            <h4 style="color: var(--text-primary); margin-bottom: 0.8rem;">Internship Highlights & Pictures</h4>
-            <p style="color:var(--text-secondary); line-height:1.7; margin-bottom:1rem;">
-                Focused on IBM Watson ecosystems, deploying predictive models for enterprise intent analysis. Gained massive exposure to enterprise-grade AI deployment pipelines.
-            </p>
-            <div style="margin-top: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem;">
-                    <div style="aspect-ratio: 16/9; background: #f0f0f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.75rem;">Arcana Team Picture</div>
-                    <div style="aspect-ratio: 16/9; background: #f0f0f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.75rem;">Certification Ceremony</div>
+        <div class="modal-side-layout">
+            <div class="modal-description">
+                <p style="color:var(--text-secondary); line-height:1.7; margin-bottom:1.5rem;">
+                    During my tenure at Arcana Info, I focused on enterprise-grade AI deployments using IBM Watson and Scikit-learn. I achieved 92% accuracy in intent analysis for corporate clients.
+                </p>
+                <ul style="color:var(--text-secondary); padding-left:1.2rem; margin-bottom:1.5rem;">
+                    <li>Intent analysis for large-scale customer data.</li>
+                    <li>Predictive models using IBM Watson.</li>
+                    <li>Process automation using Python.</li>
+                </ul>
+            </div>
+            <div class="modal-media">
+                <img src="assets/images/Arcana 2.jpeg" alt="Receiving Certificate">
+                <img src="assets/images/Arcana.png" alt="Arcana Performance Certificate">
+                <p style="font-size:0.8rem; color:#666; text-align:center;">Receiving the Best Performance Award</p>
+            </div>
+        </div>
+        `
+    },
+
+    // CERTIFICATES
+    'cert_deep_learning': {
+        title: 'Certificate: Deep Learning Specialization',
+        content: `
+            <div class="modal-side-layout">
+                <div class="modal-description">
+                    <p style="color:var(--text-secondary); line-height:1.7;">
+                        Comprehensive 5-course specialization covering Neural Networks, Hyperparameter tuning, CNNs, and Sequence Models (RNNs/LSTMs). Issued by Stanford Online via Coursera.
+                    </p>
+                </div>
+                <div class="modal-media">
+                    <img src="assets/images/SupervisedML.png" alt="Deep Learning Certificate">
                 </div>
             </div>
         `
     },
-    'arcana_docs': {
-        title: 'Documents: Arcana Info',
+    'cert_machine_learning': {
+        title: 'Certificate: Machine Learning Specialization',
         content: `
-            <div style="display: flex; flex-direction: column; gap: 1rem;">
-                <div style="padding: 1rem; background: rgba(234, 88, 12, 0.05); border: 1px solid rgba(234, 88, 12, 0.1); border-radius: 12px; display: flex; justify-content: space-between; align-items: center;">
-                    <div>
-                        <strong style="display:block; font-size: 0.9rem;">Internship Completion Certificate</strong>
-                        <span style="font-size: 0.75rem; color: #666;">Arcana Info (Pvt.) Ltd</span>
-                    </div>
-                    <span style="color: var(--accent-color); font-weight: 600; font-size: 0.8rem;">Ready Soon</span>
+            <div class="modal-side-layout">
+                <div class="modal-description">
+                    <p style="color:var(--text-secondary); line-height:1.7;">
+                        Foundational concepts of Machine Learning, including Supervised Learning, Advanced Algorithms, and Recommender Systems. Taught by Andrew Ng.
+                    </p>
+                </div>
+                <div class="modal-media">
+                    <img src="assets/images/Advanced Learning Algorithms.png" alt="Machine Learning Certificate">
+                </div>
+            </div>
+        `
+    },
+    'cert_intro_python': {
+        title: 'Certificate: Introduction to Python',
+        content: `
+            <div class="modal-side-layout">
+                <div class="modal-description">
+                    <p style="color:var(--text-secondary); line-height:1.7;">
+                        Mastery of Python basics, including data types, Control structures, and data manipulation libraries like NumPy and Pandas.
+                    </p>
+                </div>
+                <div class="modal-media">
+                    <img src="assets/images/intro To python.png" alt="Intro to Python Certificate">
+                </div>
+            </div>
+        `
+    },
+    'cert_inter_python': {
+        title: 'Certificate: Intermediate Python',
+        content: `
+            <div class="modal-side-layout">
+                <div class="modal-description">
+                    <p style="color:var(--text-secondary); line-height:1.7;">
+                         Advanced Python features, object-oriented programming, and complex data analysis workflows for data science and AI applications.
+                    </p>
+                </div>
+                <div class="modal-media">
+                    <img src="assets/images/Intermediate Python.png" alt="Intermediate Python Certificate">
                 </div>
             </div>
         `
@@ -267,7 +291,6 @@ window.closeModal = function () {
     }
 };
 
-// Close modal when clicking outside the content box
 window.addEventListener('click', (e) => {
     const modal = document.getElementById('detailsModal');
     if (modal && e.target === modal) {

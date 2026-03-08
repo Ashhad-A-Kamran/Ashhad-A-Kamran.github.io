@@ -110,7 +110,7 @@ const modalData = {
                     </ul>
                 </div>
                 <div class="modal-media">
-                   <div style="background: #eee; padding: 2rem; border-radius: 8px; text-align: center; color: #888;">Campus Pictures Pending</div>
+                   <img src="assets/images/DUET/duet1.png" alt="Receiving Prime Minsiter's Laptop as ranked 1st student">
                 </div>
             </div>
         `
@@ -132,6 +132,7 @@ const modalData = {
                 <div class="modal-media">
                    <img src="assets/images/Sapienza Rome/sapienza1.jpeg" alt="Sapienza Rome 1">
                    <img src="assets/images/Sapienza Rome/sapienza2.jpeg" alt="Sapienza Rome 2">
+                   <img src="assets/images/Sapienza Rome/sapienza8.jpg" alt="Sapienza Rome 8">
                    <img src="assets/images/Sapienza Rome/sapienza3.jpeg" alt="Sapienza Rome 3">
                    <img src="assets/images/Sapienza Rome/sapienza4.jpeg" alt="Sapienza Rome 4">
                    <img src="assets/images/Sapienza Rome/sapienza6.jpeg" alt="Sapienza Rome 6">
